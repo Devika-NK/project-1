@@ -1,0 +1,9 @@
+ p 
+	{
+	    color: orange; 
+            line-height: 1.6;
+        }
+h2 
+	{
+            color: silver; /* internal style */
+        }

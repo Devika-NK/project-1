@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration Form</title>
+</head>
+<body>
+
+<h2>Employee Registration Form</h2>
+
+<form action="/submit" method="post">
+
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required><br><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required><br><br>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label><br><br>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required><br><br>
+
+    <label for="state">State:</label>
+    <select id="state" name="state" required>
+        <option value="">Select a state</option>
+        <option value="state1">State 1</option>
+        <option value="state2">State 2</option>
+        <option value="state3">State 3</option>
+        <!-- Add more states as needed -->
+    </select><br><br>
+
+    <label for="phone">Phone Number (with country code):</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,}" required>
+    <small>Enter a valid phone number (minimum 10 digits).</small><br><br>
+
+    <label>Programming Languages Known:</label><br>
+    <input type="checkbox" id="java" name="java" value="Java">
+    <label for="java">Java</label><br>
+    <input type="checkbox" id="python" name="python" value="Python">
+    <label for="python">Python</label><br>
+    <input type="checkbox" id="javascript" name="javascript" value="JavaScript">
+    <label for="javascript">JavaScript</label><br>
+    <!-- Add more programming languages as needed -->
+
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
